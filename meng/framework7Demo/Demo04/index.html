@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子航栏</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../bower_components/framework7/dist/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="../bower_components/framework7/dist/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="../bower_components/framework7/dist/css/my-app.css">
+</head>
+<body>
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+<div class="panel panel-left panel-reveal">
+    <div class="content-block">
+        <p>left panel</p>
+    </div>
+</div>
+<div class="views">
+    <div class="view view-main">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="center">center</div>
+            </div>
+        </div>
+        <div class="pages navbar-through">
+            <div data-page="index" class="page">
+                <p>fhdkfhkadfh</p>
+            </div>
+        </div>
+        <div class="toolbar tabbar tabbar-labels-through">
+            <div class="toolbar-inner">
+                <a href="#tab1" class="tab-link active">
+                    <i class="icon tabbar-demo-icon-1"></i>
+                    <span>label 1</span>
+                </a>
+                <a href="#tab2" class="tab-link">
+                    <i class="icon tabbar-demo-icon-2">
+                        <span class="badge bg-red">25</span>
+                    </i>
+                    <span>label 2</span>
+                </a>
+                <a href="#tab3" class="tab-link">
+                    <i class="icon tabbar-demo-icon-3"></i>
+                    <span>label 3</span>
+                </a>
+                <a href="#tab4" class="tab-link">
+                    <i class="icon tabbar-demo-icon-4">
+                        <span class="badge bg-green">20</span>
+                    </i>
+                    <span>label 4</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../bower_components/framework7/dist/js/framework7.min.js"></script>
+<script src="js/my-app.js"></script>
+</body>
+</html>

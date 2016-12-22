@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>隐藏显示导航栏</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../bower_components/framework7/dist/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="../bower_components/framework7/dist/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="../bower_components/framework7/dist/css/my-app.css">
+</head>
+<body>
+<div class="statusbar-overlay"></div>
+<div class="panel-overlay"></div>
+<div class="panel panel-left panel-reveal">
+    <div class="content-block">
+        <p>left panel</p>
+    </div>
+</div>
+<!--views-->
+<div class="views">
+    <!--main views-->
+    <div class="view view-main">
+        <!--navbar-->
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="center sliding">七麦科技</div>
+                <div class="right">
+                    <a href="#" class="link icon-only open-panel"><i class="icon icon-bars-blue"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--page-->
+        <div class="pages navbar-through toolbar-through">
+            <div data-page="index" class="page">
+                <div class="page-content">
+                    <div class="content-block">
+                        <p><a href="#" class="back button hide-navbar">hide navbar</a></p>
+                        <p><a href="#" class="back button show-navbar">show navbar</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--toolbar-->
+        <div class="toolbar">
+            <div class="toolbar-inner">
+                <a href="#">link</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../bower_components/framework7/dist/js/framework7.min.js"></script>
+<script src="js/my-app.js"></script>
+</body>
+</html>

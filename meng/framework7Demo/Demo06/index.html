@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左右界面1</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../bower_components/framework7/dist/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="../bower_components/framework7/dist/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="../bower_components/framework7/dist/css/my-app.css">
+</head>
+<body>
+<div class="panel-overlay"></div>
+<div class="panel panel-left panel-reveal">
+    <div class="content-block">
+        <p>left left left</p>
+        <a href="#" class="close-panel">close</a>
+    </div>
+</div>
+<div class="panel panel-right panel-cover">
+    <div class="content-block">
+        <p>right right right</p>
+        <a href="#" class="close-panel">close</a>
+        <p><a href="#" class="open-left-panel">open left panel</a></p>
+    </div>
+</div>
+<div class="page-content">
+    <div class="content-block">
+        <p><a href="#" class="open-left-panel">open left panel</a></p>
+        <p><a href="#" class="open-right-panel">open right panel</a></p>
+    </div>
+</div>
+
+<script src="../bower_components/framework7/dist/js/framework7.min.js"></script>
+<script src="js/my-app.js"></script>
+</body>
+</html>
