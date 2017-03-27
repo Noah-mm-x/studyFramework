@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉刷新</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="../bower_components/framework7/dist/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="../bower_components/framework7/dist/css/framework7.ios.colors.min.css">
+    <link rel="stylesheet" href="../bower_components/framework7/dist/css/my-app.css">
+</head>
+<body>
+<div class="statusbar-overlay"></div>
+
+<div class="views">
+    <div class="view view-main" data-page="index">
+        <div class="pages">
+            <div data-page="index" class="page navbar-through toolbar-through">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <div class="center">七麦科技</div>
+                    </div>
+                </div>
+                <div class="page-content pull-to-refresh-content">
+                    <div class="pull-to-refresh-layer">
+                        <div class="preloader"></div>
+                        <div class="pull-to-refresh-arrow"></div>
+                    </div>
+                    <div class="list-block media-list">
+                        <ul>
+                            <li class="item-content">
+                                <div class="item-media"><img src="1" alt="1"></div>
+                                <div class="item-inner">
+                                    <div class="item-title-row">
+                                        <div class="item-title">Yellow ABCDEF</div>
+                                    </div>
+                                    <div class="item-subtitle">Tom</div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="list-block-label">你拉下试试</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../bower_components/framework7/dist/js/framework7.min.js"></script>
+<script src="js/my-app.js"></script>
+</body>
+</html>
+
+<!--
+    ul
+      li .item-content
+        div .item-media
+        div .item-inner
+            div .item-title-row
+                div .item-title
+            div .item-subtitle
+-->
